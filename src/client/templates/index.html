@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Vicarious Random Number Generator</title>
+    <script type="text/javascript" src="./static/app.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      document.write(vicarious.template.randomNumberTemplate({}))
+    </script>
+    <img src="./static/rubics.jpeg"></br>
+    <button onClick="vicarious.app.getRandomNumber()">Click for random number from 0 to 100!</button>
+    <div>
+      Lower bound: <input type="text" id="lower-bound"></br>
+      Upper bound: <input type="text" id="upper-bound"></br>
+    <button onClick="vicarious.app.triggerGetRandomNumberInRange()">Click for number in specified range!</button>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+{namespace vicarious.template}
+
+/**
+ * Displays a random number.
+ * @param? randomInt The random int to use.
+ */
+{template .randomNumberTemplate}
+  // TODO(bgb): Use xid instead.
+  <div id="randomIntElement">
+    {if $randomInt}
+      {$randomInt}
+    {/if}
+  </div>
+{/template}
